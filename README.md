@@ -10,7 +10,7 @@ These instructions will guide you on how to run the program on your local machin
 - Running the program
 - Clone or download the repository to your local machine
 - Open the terminal and navigate to the project directory
-- Run the command python random_word_generator.py
+- Run the command ```python Points_generator.py```
 - A GUI window will appear, click the "Start" button to start the word generation
 - Make sure to have the desired window active before running the code
 - The program will automatically type the random words into the active window
