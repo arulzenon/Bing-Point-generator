@@ -25,4 +25,4 @@ These instructions will guide you on how to run the program on your local machin
 Sakthi Arul
 
 ## Acknowledgments
-Thank you for the inspiration and guidance provided by PyAutoGUI and ChatGPT which helped in creating this project.
+Credits goes to ChatGPT which helped in creating this project.
