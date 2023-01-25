@@ -19,7 +19,7 @@ def generate_words():
         pyautogui.doubleClick()  # double clicks
         count += 1
         remaining_time -= 1
-        root.after(2000, generate_words)
+        root.after(1000, generate_words)
     else:
         stop_button.config(state="disabled")
 
@@ -30,7 +30,7 @@ def stop_generating():
 def start_generating():
     global count, remaining_time
     count = 0
-    remaining_time = 30
+    remaining_time = 60
     stop_button.config(state="normal")
     time.sleep(1)
     update_time()
@@ -39,14 +39,15 @@ def start_generating():
 def update_time():
     global remaining_time
     if remaining_time > 0:
-        time_label.config(text="Words remaining: {} Words".format(remaining_time))
+        time_label.config(text="time remaining: {} time".format(remaining_time))
         root.after(1000, update_time)
     else:
-        time_label.config(text="Words remaining: 0 words")
+        time_label.config(text="time remaining: 0 time")
 
 def on_closing():
     if tk.messagebox.askokcancel("Quit", "Do you want to quit?"):
         root.destroy()
+
 
 root = tk.Tk()
 root.title("Bing Word Generator")
