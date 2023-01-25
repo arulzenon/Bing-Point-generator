@@ -65,7 +65,7 @@ start_button.pack()
 stop_button = tk.Button(root, text="Stop", command=stop_generating, state="disabled")
 stop_button.pack()
 
-time_label = tk.Label(root, text="Words remaining: ")
+time_label = tk.Label(root, text="Time remaining: ")
 time_label.pack()
 
 root.bind("<Escape>", lambda e: on_closing())
